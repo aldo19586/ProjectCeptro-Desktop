@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA DE REGISTRO DE MATRICULAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            width: 20%;
+        }
+
+        td {
+            color: #211AF3
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .header img {
+                width: 100px;
+                height: auto;
+            }
+
+            .header h4 {
+                margin: 0;
+                flex: 1;
+                text-align: center;
+            }
+    </style>
+</head>
+
+<body>
+    <table style="border: none;">
+        <tr>
+            <td style="border: none;"><img src="@logo" alt="Logo 1" width="130px"></td>
+            <td style="border: none;" width="10%"></td>
+            <td style="border: none;" width="40%"><h2 style="text-align:center;color:black;">FICHA DE REGISTRO DE DATOS</h2></td>
+            <td style="border: none;" width="10%"></td>
+            <td style="border: none;"><img src="@cetpro" alt="Logo 2" width="60px"></td>
+
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+
+    <table>
+        <tr>
+            <th>AÑO</th>
+            <td>@Año</td>
+            <td width="20%" style="border: none;"></td>
+            <th>CÓDIGO INSCRIPCIÓN</th>
+            <td>@CodigoInscripcion</td>
+        </tr>
+    </table>
+
+    <br>
+    <table>
+
+        <tr>
+            <th>Nombre del CETPRO</th>
+            <td>@NombreCetpro</td>
+            <th>CÓDIGO MODULAR</th>
+            <td>@CodigoModular</td>
+        </tr>
+        <tr>
+            <th>TIPO DE GESTIÓN</th>
+            <td>@TipoGestion</td>
+            <th>UGEL</th>
+            <td>@Ugel</td>
+        </tr>
+        <tr>
+            <th>RESOLUCIÓN DE AUTORIZACIÓN</th>
+            <td>@ResolucionAuth</td>
+            <th>RESOLUCIÓN DE AUTORIZACIÓN DEL PROGRAMA/MODULO</th>
+            <td>@ResolucionProgram</td>
+        </tr>
+        <tr>
+            <th>LUGAR DONDE SE PRESTA EL SERVICIO</th>
+            <td>@PrestaServicio</td>
+            <th>DISTRITO</th>
+            <td>@Distrito</td>
+        </tr>
+        <tr>
+            <th>DEPARTAMENTO</th>
+            <td>@Departamento</td>
+            <th>TELÉFONO</th>
+            <td>@TelefonoStudent</td>
+        </tr>
+        <tr>
+            <th>PROVINCIA</th>
+            <td>@Provincia</td>
+            <th>DIRECCIÓN</th>
+            <td>@Direccion</td>
+        </tr>
+        <tr>
+            <th>CORREO ELECTRÓNICO INSTITUCIONAL</th>
+            <td>@Email</td>
+            <th>PAGINA WEB</th>
+            <td>@PaginaWeb</td>
+        </tr>
+        <tr>
+            <th>PROGRAMA DE ESTUDIOS/ESPECIALIDAD</th>
+            <td>@ProgramaEstudios</td>
+            <th>NIVEL INFORMATIVO</th>
+            <td>@Nivel</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="4" style="text-align:left;">DATOS DEL ESTUDIANTE</th>
+        </tr>
+        <tr>
+            <th>APELLIDO PATERNO</th>
+            <th>APELLIDO MATERNO</th>
+            <th>NOMBRES</th>
+            <th>SEXO</th>
+        </tr>
+        <tr>
+            <td>@Paterno</td>
+            <td>@Materno</td>
+            <td>@Name</td>
+            <td>@Sexo</td>
+        </tr>
+        <tr>
+            <th>FECHA DE NACIMIENTO</th>
+            <th>DOCUMENTO DE IDENTIDAD</th>
+            <th>EDAD</th>
+            <th>PAIS</th>
+        </tr>
+        <tr>
+            <td>@FechaNac</td>
+            <td>@DocIdent</td>
+            <td>@Edad</td>
+            <td>@Pais</td>
+        </tr>
+        <tr>
+            <th>LUGAR DE NACIMIENTO</th>
+            <th>DISTRITO</th>
+            <th>PROVINCIA</th>
+            <th>REGIÓN</th>
+        </tr>
+        <tr>
+            <td>@LugarNac</td>
+            <td>@DistrictStudent</td>
+            <td>@ProvinceStudent</td>
+            <td>@Region</td>
+        </tr>
+        <tr>
+            <th>DOMICILIO</th>
+            <th>TRABAJA</th>
+            <th colspan="2">PUESTO DE TRABAJO</th>
+        </tr>
+        <tr>
+            <td>@Domicilio</td>
+            <td>@Trabaja</td>
+            <td colspan="2">@PuestoTrabajo</td>
+        </tr>
+        <tr>
+            <th>ESTADO CIVIL</th>
+            <th>TELÉFONO</th>
+            <th colspan="2">CORREO ELECTRONICO</th>
+        </tr>
+        <tr>
+            <td>@EstadoCivil</td>
+            <td>@TelefonStudent</td>
+            <td colspan="2">@Correo</td>
+        </tr>
+
+        <tr>
+            <th>MENCIONE UN NUMERO DE CONTACTO (Emergencia)</th>
+            <th>GRADO DE ESTUDIOS LOGRADO</th>
+            <th>TIENE CARGA FAMILIAR</th>
+            <th>N° PERSONAS</th>
+        </tr>
+        <tr>
+            <td>@NumEmergencia</td>
+            <td>@GradoEstudios</td>
+            <td>@CargaFamiliar</td>
+            <td>@NumPersonas</td>
+        </tr>
+        <tr>
+            <th>TIENE INTERNET EN CASA</th>
+            <th>MENCIONE EL TIPO DE OPERADOR EN SU CELULAR</th>
+            <th colspan="2">QUE EQUIPO TECNOLÓGICO UTILIZA PARA LAS CLASES VIRTUALES</th>
+        </tr>
+        <tr>
+            <td>@Internet</td>
+            <td>@TipoOperador</td>
+            <td colspan="2">@EquiposTecn</td>
+        </tr>
+        <tr>
+            <th>PRESENTA ALGUNA DISCAPACIDAD</th>
+            <th>TIPO DE DISCAPACIDAD</th>
+            <th colspan="2">LENGUA ORIGINARIA</th>
+        </tr>
+        <tr>
+            <td>@Discapacidad</td>
+            <td>@TipoDiscapacidad</td>
+            <td colspan="2">@Lengua</td>
+        </tr>
+
+    </table>
+    <table>
+    </table>
+
+    <br><br>
+
+    <div style="text-align: right; margin-right: 150px;font-size:12px">
+        <label>Lugar y fecha: @LugarFecha</label>
+    </div>
+
+    <br><br><br><br><br>
+
+    <table>
+        <tr>
+            <td style="border: none; margin-top: -20px;color:black;">
+                <hr width="70%" style="margin-left: 55px; border: 0.5px solid black;">
+                Director<br>Sello, firma, post firma
+            </td>
+            <td style="border: none; color: black;">
+                <hr width="70%" style="margin-left: 55px;  border: 0.5px solid black; ">
+                Coordinador Académico<br>Sello, firma, post firma
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

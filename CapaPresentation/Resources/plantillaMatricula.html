@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHA DE REGISTRO DE MATRICULAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            writing-mode: horizontal-tb;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 2px;
+            text-align: center;
+            width: 150px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding-left: 4px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 13px;
+            color: #211AF3;
+        }
+
+
+
+        th {
+            background-color: #f2f2f2;
+            font-size: 12px;
+            /* Cambia esto al tamaño que desees */
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border: none;">
+        <tr>
+            <td style="border: none;"><img src="@logo" alt="Logo 1" width="150px"></td>
+            <td style="border: none;" width="10%"></td>
+            <td style="border: none;" width="40%"><h2 style="text-align:center;color:black;padding-left:52px;">FICHA DE REGISTRO DE MATRÍCULA<br>2024</h2></td>
+            <td style="border: none;" width="10%"></td>
+            <td style="border: none;padding-left:70px"><img src="@cetpro" alt="Logo 2" width="70px"></td>
+
+        </tr>
+    </table>
+    <br>
+
+
+    <table>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Nombre del CETPRO</th>
+            <td>@NombreCetpro</td>
+            <th style="text-align:left;padding-left:5px">DRE</th>
+            <td>@Dre</td>
+        </tr>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Código Modular</th>
+            <td>@CodigoModular</td>
+            <th style="text-align:left;padding-left:5px">Tipo de Gestión</th>
+            <td>@TipoGestion</td>
+        </tr>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Departamento</th>
+            <td>@Departamento</td>
+            <th style="text-align:left;padding-left:5px">Provincia</th>
+            <td>@Provincia</td>
+        </tr>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Distrito</th>
+            <td style="padding:2px;">@Distrito</td>
+            <th style="text-align:left;padding-left:5px">Tipo de Gestión</th>
+            <td>@TipoGestion</td>
+        </tr>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Programa de estudios/Especialidad</th>
+            <td>@ProgramaEstudios</td>
+            <th style="text-align:left;padding-left:5px">Periodo Lectivo</th>
+            <td>@PeriodoLectivo</td>
+        </tr>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Módulo</th>
+            <td>@Modulo</td>
+            <th style="text-align:left;padding-left:5px">Periodo de Clases</th>
+            <td>@PeriodoClases</td>
+        </tr>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Nivel Formativo</th>
+            <td>@NivelFormativo</td>
+            <th style="text-align:left;padding-left:5px">Periodo Académico</th>
+            <td>@PeriodoAcademico</td>
+        </tr>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Tipo de plan de Estudios</th>
+            <td>@TipoPlan</td>
+            <th style="text-align:left;padding-left:5px">Número de Documento</th>
+            <td>@NumDoc</td>
+        </tr>
+        <tr>
+            <th style="text-align:left;padding-left:5px">Apellidos y Nombres</th>
+            <td colspan="3">@ApeNombres</td>
+        </tr>
+        <!-- Agrega más filas y columnas según la imagen -->
+    </table>
+    <h4 style="text-align:center;">UNIDADES DIDÁCTICAS</h4>
+    <table>
+        <tr>
+            <th style="text-align:center;color:black;width:5%">N°</th>
+            <th style="width:50%">UNIDAD DIDÁCTICA</th>
+            <th style="width:15%">CRÉDITO</th>
+            <th style="width:15%">HORAS</th>
+            <th style="width:15%">CONDICIÓN</th>
+        </tr>
+        <tr>
+            <td style="text-align:center;color:black;">1</td>
+            <td>@Unid1</td>
+            <td style="text-align:center;">@Credit1</td>
+            <td style="text-align:center">@Hora1</td>
+            <td style="text-align:center">@Condi1</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;color:black;">2</td>
+            <td>@Unid2</td>
+            <td style="text-align:center">@Credit2</td>
+            <td style="text-align:center">@Hora2</td>
+            <td style="text-align:center">@Condi2</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;color:black;">3</td>
+            <td>@Unid3</td>
+            <td style="text-align:center">@Credit3</td>
+            <td style="text-align:center">@Hora3</td>
+            <td style="text-align:center">@Condi3</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;color:black;">4</td>
+            <td>@Unid4</td>
+            <td style="text-align:center">@Credit4</td>
+            <td style="text-align:center">@Hora4</td>
+            <td style="text-align:center">@Condi4</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;color:black;">5</td>
+            <td>@Unid5</td>
+            <td style="text-align:center">@Credit5</td>
+            <td style="text-align:center">@Hora5</td>
+            <td style="text-align:center">@Condi5</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;color:black;">6</td>
+            <td>@Unid6</td>
+            <td style="text-align:center">@Credit6</td>
+            <td style="text-align:center">@Hora6</td>
+            <td style="text-align:center">@Condi6</td>
+        </tr>
+        <tr>
+            <td style="text-align:center;color:black;">7</td>
+            <td>@Unid7</td>
+            <td style="text-align:center">@Credit7</td>
+            <td style="text-align:center">@Hora7</td>
+            <td style="text-align:center">@Condi7</td>
+        </tr>
+        <!-- Agrega más filas y columnas según la imagen -->
+    </table>
+    <h4 style="text-align:center;">UNIDADES DIDÁCTICAS DE SUBSANACIÓN</h4>
+    <table style="width:100%;">
+        <tr>
+            <th>N°</th>
+            <th>UNIDAD DIDÁCTICA</th>
+            <th>CRÉDITO</th>
+            <th>HORAS</th>
+            <th>CONDICIÓN</th>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br><br><br>
+
+    <table>
+        <tr>
+            <td style="border: none; margin-top: -20px;">
+                <hr width="80%" style="margin-left: 40px; border: 0.5px solid black;">
+
+
+                <div style="text-align: center;color:black;">Director<br>Sello, firma, post firma</div>
+            </td>
+            <td style="border: none;">
+                <hr width="80%" style="margin-left: 40px; border: 0.5px solid black;">
+
+                <div style="text-align: center;color:black;"> Coordinador Académico<br>Sello, firma, post firma</div>
+            </td>
+            <td style="border: none;">
+                <hr width="80%" style="margin-left: 40px; border: 0.5px solid black;">
+                <div style="text-align: center;color:black;">Estudiante <br>Sello,firma,post firma</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
